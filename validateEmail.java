@@ -9,7 +9,7 @@ public class validateEmail {
 		System.out.println("Enter your E-mail: ");
 	    String email = new Scanner(System.in).next();
 	     
-	    String regex = "^[a-zA-Z]{3}+(.+)$";
+	    String regex = "^[0-9a-zA-Z]+(.+)$";
 	     
 	    Pattern pattern = Pattern.compile(regex);    
 	    Matcher matcher = pattern.matcher(email); 
